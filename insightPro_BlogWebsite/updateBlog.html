@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Blog | Insight-Pro Software Solutions</title>
+	<style>
+		body {
+		  background-color: #80a693;
+		  color: #fff;
+		  font-family: Arial, sans-serif;
+		  font-size: 16px;
+		}
+
+	header {
+	  background-color: #ff5555;
+	  padding: 20px;
+	}
+
+	main {
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding: 20px;
+	  color: #000;
+	  background-color: #fff;
+	  border-radius: 10px;
+	  border: 2px solid #80a693;
+	  width: 80%;
+	  text-align: center;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	input[type="text"], textarea {
+		margin-bottom: 10px;
+		padding: 10px;
+		width: 100%;
+		border-radius: 5px;
+		border: none;
+	}
+
+	input[type="submit"] {
+		background-color: #ff5555;
+	  	border: 2px solid #ff5555;
+	  	color: #fff;
+	  	padding: 10px 20px;
+	  	margin-top: 10px;
+	  	cursor: pointer;
+	  	transition: all 0.3s ease;
+	}
+
+	input[type="submit"]:hover {
+		background-color: transparent;
+	  	color: #ff5555;
+	  	border: 2px solid #ff5555;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>Insight-Pro Software Solutions Blogs Portal</h1>
+		<h4>Update Blog</h4>
+	</header>
+<br>
+<br>
+	<main>
+		<form>
+			<label for="blogId">Blog Id:</label>
+			<input type="text" id="blogId" name="blogId">
+		<label for="UpdateKey">Update Key:</label>
+		<input type="text" id="UpdateKey" name="UpdateKey">
+
+		<label for="UpdateValue">Update Value:</label>
+		<textarea id="UpdateValue" name="UpdateValue" rows="10"></textarea>
+
+		<input type="submit" value="Update Blog">
+	</form>
+</main>
+</body>
+</html>
