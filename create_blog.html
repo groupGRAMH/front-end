@@ -1,158 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Create Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with Creative Design landing page.">
+  <meta name="author" content="Devcrud">
+  <title>Create Blog</title>
 
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.11.0/dist/toastify.min.css">
+  <!-- Font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-    <!-- Bootstrap + Creative Design main styles -->
-	<link rel="stylesheet" href="assets/css/creative-design.css">
+  <!-- Bootstrap + Creative Design main styles -->
+  <link rel="stylesheet" href="assets/css/creative-design.css">
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="navbar-brand" href="#"><strong class="text-primary">Group</strong> <span class="text-dark">GRAHM</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Blogs">Blogs</a>
-                    </li>
-                    
-                    <li class="nav-item ml-md-4">
-                        <a class="nav-link btn btn-primary" href="get_blog.html">Create Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- End of Page Navbar -->   
+  <!-- Page Navbar -->
+  <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
+    data-offset-top="20">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong class="text-primary">Group</strong> <span
+          class="text-dark">GRAHM</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Page Header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content">
-            <p>hlakanipho API</p>
-            <h6>Add a Blog</h6> 
-           <!-- <button class="btn btn-outline-light">Download Now</button> -->
-        </div>      
-    </header><!-- End of Page Header -->    
-    
-   
-    <section id="contact" class="text-center">
-        <div class="container">
-          <form id="blogForm" class="contact-form col-md-11 col-lg-9 mx-auto">
-            <div class="form-row">
-              <div class="col form-group">
-                <input type="text" name="author_name" class="form-control" placeholder="Author Name">
-              </div>
-              <div class="col form-group">
-                <input type="text" name="author_surname" class="form-control" placeholder="Author Surname">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col form-group">
-                <select name="blog_category" class="form-control">
-                  <option value="">Select Category</option>
-                  <option value="technology">Technology</option>
-                  <option value="Fashion">Fashion</option>
-                  <option value="Travel">Travel</option>
-                  
-                </select>
-              </div>
-              <div class="col form-group">
-                <input type="text" name="blog_title" class="form-control" placeholder="Blog title">
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea name="blog_body" id="blog_body" cols="30" rows="5" class="form-control" placeholder="Blog body [hi,..]"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary btn-block" value="Create">
-            </div>
-          </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="get_blog.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="get_blog.html">Filter</a>
+          </li>
+
+          <li class="nav-item ml-md-4">
+            <a class="nav-link btn btn-primary" href="create_blog.html">Create Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- End of Page Navbar -->
+
+  <!-- Page Header -->
+  <header id="home" class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <p>hlakanipho API</p>
+      <h6>Add a Blog</h6>
+      <!-- <button class="btn btn-outline-light">Download Now</button> -->
+    </div>
+  </header><!-- End of Page Header -->
+
+
+  <section id="contact" class="text-center">
+    <div class="container">
+      <form id="blogForm" class="contact-form col-md-11 col-lg-9 mx-auto">
+        <div class="form-row">
+          <div class="col form-group">
+            <input type="text" name="name" class="form-control" placeholder="Author Name">
+          </div>
+          <div class="col form-group">
+            <input type="text" name="surname" class="form-control" placeholder="Author Surname">
+          </div>
         </div>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.11.0/dist/toastify.min.js"></script>
-      <script>
-        const form = document.getElementById('blogForm');
-      
-        form.addEventListener('submit', function (event) {
-          event.preventDefault();
-      
-          const formData = new FormData(form);
-          const blogData = {
-            author_name: formData.get('author_name'),
-            author_surname: formData.get('author_surname'),
-            blog_category: formData.get('blog_category'),
-            blog_title: formData.get('blog_title'),
-            blog_body: formData.get('blog_body')
-          };
-      
-          // Make a POST request to your API endpoint
-          fetch('https://lpuhpn8lo9.execute-api.us-east-1.amazonaws.com/Prod/create/', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(blogData)
-          })
-            .then(response => response.json())
-            .then(data => {
-              // Handle the response from the API
-              console.log(data);
-      
-              // Show a success toast message
-              Toastify({
-                text: 'Form submitted successfully!',
-                backgroundColor: 'green',
-                duration: 3000
-              }).showToast();
-            })
-            .catch(error => {
-              // Handle any error that occurred during the request
-              console.error(error);
-      
-              // Show an error toast message
-              Toastify({
-                text: 'An error occurred. Please try again.',
-                backgroundColor: 'red',
-                duration: 3000
-              }).showToast();
-            });
+        <div class="form-row">
+          <div class="col form-group">
+            <select name="blogCategory" class="form-control">
+              <option value="">Select Category</option>
+              <option value="technology">Technology</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Travel">Travel</option>
+            </select>
+          </div>
+          <div class="col form-group">
+            <input type="text" name="blogTitle" class="form-control" placeholder="Blog title">
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="blogBody" id="blog_body" cols="30" rows="5" class="form-control"
+            placeholder="Blog body [hi,..]"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary btn-block" value="Create">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- JavaScript code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    // Wait for the DOM to be ready
+    $(document).ready(function () {
+      // Handle form submission
+      $('#blogForm').submit(function (event) {
+        event.preventDefault();
+
+        // Get form data
+        const formData = $(this).serializeArray();
+        const blogData = {};
+        formData.forEach(function (field) {
+          blogData[field.name] = field.value;
         });
-      </script>
-            <!-- foooter -->
-            <footer class="footer">            
-                <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">GroupGRAHM</a></p>
-            </footer><!-- End of Footer-->  
-            
-        </div><!--End of Container -->      
-    </section><!-- End of Section -->
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        // Make a POST request to your API endpoint
+        $.ajax({
+          url: 'https://1ygogop9lb.execute-api.us-east-2.amazonaws.com/Prod/',
+          type: 'POST',
+          data: JSON.stringify(blogData),
+          contentType: 'application/json',
+          success: function (data) {
+            console.log(data);
+            // Show a success alert message
+            alert('Form submitted successfully!');
+            window.location.href = 'get_blog.html';
+          },
+          error: function (error) {
+            console.error(error);
+            // Show an error alert message
+            alert('An error occurred. Please try again.');
+          }
+        });
+      });
+    });
+  </script>
 
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> GroupGRAHM</p>
+    </div>
+  </footer><!-- End of Footer -->
 
-    <!-- Creative Design js -->
-    <script src="assets/js/creative-design.js"></script>
+  <!-- Include jQuery library -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+  <!-- Bootstrap affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+  <!-- Creative Design js -->
+  <script src="assets/js/creative-design.js"></script>
 
 </body>
+
 </html>

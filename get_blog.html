@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Creative Design landing page.">
     <meta name="author" content="Devcrud">
@@ -11,145 +12,85 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
     <!-- Bootstrap + Creative Design main styles -->
-	<link rel="stylesheet" href="assets/css/creative-design.css">
+    <link rel="stylesheet" href="assets/css/creative-design.css">
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
     <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
+        data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong class="text-primary">Group</strong> <span class="text-dark">GRAHM</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><strong class="text-primary">Group</strong> <span
+                    class="text-dark">GRAHM</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="get_blog.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Blogs">Blogs</a>
+                        <a class="nav-link" href="get_blog.html">Filter</a>
                     </li>
-                    
+
                     <li class="nav-item ml-md-4">
-                        <a class="nav-link btn btn-primary" href="get_blog.html">Create Blog</a>
+                        <a class="nav-link btn btn-primary" href="create_blog.html">Create Blog</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav><!-- End of Page Navbar -->   
+    </nav><!-- End of Page Navbar -->
 
     <!-- Page Header -->
     <header id="home" class="header">
         <div class="overlay"></div>
         <div class="header-content">
             <p>Reba API</p>
-            <h6>All Blogs</h6> 
-            
-        </div>      
-    </header><!-- End of Page Header -->    
-    
-    <!-- About Section -->
-    <section id="about">
-        <!-- Container -->
-        <div class="container">
-            <!-- About wrapper -->
-            <div class="about-wrapper">
-                <div class="after"><h1>Category</h1></div>
-                <div class="content">
-                    <h5 class="title mb-3">BlogTitle</h5>
- 
-                     <p>body conent</p>    
-                      <div class="row">
-                        <div class="col">
-                            <p>
-                                <strong>Author name</strong>
-                            </p>
-                         </div>
-                         
-                        <div class="col">
-                            <p>
-                                <strong>Author Surname</strong>
-                            </p> 
-                       </div>
-                    </div>
-                    
-                            
-                    <a href="javascript:void(0)">Read More...</a>
-                </div>
-            </div><!-- End of About Wrapper -->         
-        </div>  <!-- End of Container-->        
-     </section><!--End of Section -->
-        <!-- About Section -->
+            <h6>All Blogs</h6>
+        </div>
+    </header><!-- End of Page Header -->
 
     <section id="about">
         <!-- Container -->
         <div class="container">
             <!-- About wrapper -->
             <div class="about-wrapper">
-                <div class="after"><h1>Category</h1></div>
-                <div class="content">
-                    <h5 class="title mb-3">BlogTitle</h5>
- 
-                     <p>body conent</p>    
-                      <div class="row">
-                        <div class="col">
-                            <p>
-                                <strong>Author name</strong>
-                            </p>
-                         </div>
-                         
-                        <div class="col">
-                            <p>
-                                <strong>Author Surname</strong>
-                            </p> 
-                       </div>
+                <div class="table-responsive">
+                    <!-- Add the search input field above the table -->
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Search...">
                     </div>
-    
-                    
-                            
-                    <a href="javascript:void(0)">Read More...</a>
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#allBlogs">All Blogs</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="allBlogs" class="tab-pane fade show active">
+                            <div class="row" id="blogCardRow"></div>
+                        </div>
+                    </div>
                 </div>
-            </div><!-- End of About Wrapper -->         
-        </div>  <!-- End of Container-->        
-     </section><!--End of Section -->
-
-     <section id="about">
-        <!-- Container -->
-        <div class="container">
-            <!-- About wrapper -->
-            <div class="about-wrapper">
-                <div class="after"><h1>Category</h1></div>
-                <div class="content">
-                    <h5 class="title mb-3">BlogTitle</h5>
- 
-                     <p>body conent</p>    
-                      <div class="row">
-                        <div class="col">
-                            <p>
-                                <strong>Author name</strong>
-                            </p>
-                         </div>
-                         
-                        <div class="col">
-                            <p>
-                                <strong>Author Surname</strong>
-                            </p> 
-                       </div>
-                    </div>
-   
-
-            <!-- foooter -->
-            <footer class="footer">            
-                <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">GroupGRAHM</a></p>
-            </footer><!-- End of Footer-->  
-            
-        </div><!--End of Container -->      
+            </div><!-- End of About Wrapper -->
+        </div><!-- End of Container -->
     </section><!-- End of Section -->
 
-    <!-- core  -->
+    <!-- footer -->
+    <footer class="footer">
+        <p>
+            <script>
+                document.write(new Date().getFullYear())
+            </script> &copy; <a href="#">GroupGRAHM</a>
+        </p>
+    </footer><!-- End of Footer -->
+
+    <!-- core -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
@@ -159,5 +100,115 @@
     <!-- Creative Design js -->
     <script src="assets/js/creative-design.js"></script>
 
+    <script>
+        fetch('https://y0h5nx73fb.execute-api.us-east-2.amazonaws.com/default/node-appp-getAllItemsFunction-r2OR2eYkcZ8x')
+            .then(response => response.json())
+            .then(data => {
+                const blogCardRow = document.getElementById('blogCardRow');
+                const searchInput = document.getElementById('searchInput');
+
+                // Function to format the date in a relative format (e.g., "X time ago")
+                const formatRelativeDate = (date) => {
+                    const diffInMs = new Date() - new Date(date);
+                    const diffInSeconds = Math.floor(diffInMs / 1000);
+
+                    const formatter = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+
+                    if (diffInSeconds < 60) {
+                        return formatter.format(-diffInSeconds, 'second');
+                    } else if (diffInSeconds < 3600) {
+                        const diffInMinutes = Math.floor(diffInSeconds / 60);
+                        return formatter.format(-diffInMinutes, 'minute');
+                    } else if (diffInSeconds < 86400) {
+                        const diffInHours = Math.floor(diffInSeconds / 3600);
+                        return formatter.format(-diffInHours, 'hour');
+                    } else if (diffInSeconds < 2592000) {
+                        const diffInDays = Math.floor(diffInSeconds / 86400);
+                        return formatter.format(-diffInDays, 'day');
+                    } else if (diffInSeconds < 31536000) {
+                        const diffInMonths = Math.floor(diffInSeconds / 2592000);
+                        return formatter.format(-diffInMonths, 'month');
+                    } else {
+                        const diffInYears = Math.floor(diffInSeconds / 31536000);
+                        return formatter.format(-diffInYears, 'year');
+                    }
+                };
+
+                // Function to filter the blogs based on the search input
+                const filterBlogs = () => {
+                    const searchTerm = searchInput.value.toLowerCase();
+
+                    // Clear the blog card row
+                    blogCardRow.innerHTML = '';
+
+                    // Filter the blogs based on the search term
+                    const filteredBlogs = data.filter(blog => {
+                        const title = blog.blogTitle.toLowerCase();
+                        const authorName = blog.name.toLowerCase();
+                        const authorSurname = blog.surname.toLowerCase();
+                        const category = blog.blogCategory.toLowerCase();
+
+                        return (
+                            title.includes(searchTerm) ||
+                            authorName.includes(searchTerm) ||
+                            authorSurname.includes(searchTerm) ||
+                            category.includes(searchTerm)
+                        );
+                    });
+
+                    // Create a card for each filtered blog item
+                    filteredBlogs.forEach(blog => {
+                        const card = document.createElement('div');
+                        card.className = 'card text-center';
+
+                        const cardHeader = document.createElement('div');
+                        cardHeader.className = 'card-header';
+                        cardHeader.textContent = 'Featured';
+                        card.appendChild(cardHeader);
+
+                        const cardBody = document.createElement('div');
+                        cardBody.className = 'card-body';
+
+                        const cardTitle = document.createElement('h5');
+                        cardTitle.className = 'card-title';
+                        cardTitle.textContent = blog.blogTitle;
+                        cardBody.appendChild(cardTitle);
+
+                        const cardText = document.createElement('p');
+                        cardText.className = 'card-text';
+                        cardText.textContent = 'With supporting text below as a natural lead-in to additional content.';
+                        cardBody.appendChild(cardText);
+
+                        const cardLink = document.createElement('a');
+                        cardLink.className = 'btn btn-primary';
+                        cardLink.href = 'viewMore.html?id=' + blog.id; // Assuming the unique identifier for each blog is stored in the 'id' property
+                        cardLink.textContent = 'Read More';
+                        cardBody.appendChild(cardLink);
+
+                        card.appendChild(cardBody);
+
+                        const cardFooter = document.createElement('div');
+                        cardFooter.className = 'card-footer text-muted';
+                        const relativeDate = formatRelativeDate(blog.dateCreated);
+                        cardFooter.textContent = `Views: ${blog.views} | Date Created: ${relativeDate}`;
+                        card.appendChild(cardFooter);
+
+                        const cardWrapper = document.createElement('div');
+                        cardWrapper.className = 'col-md-12 mt-4';
+                        cardWrapper.appendChild(card);
+
+                        blogCardRow.appendChild(cardWrapper);
+                    });
+                };
+
+                // Add event listener to the search input for real-time filtering
+                searchInput.addEventListener('input', filterBlogs);
+
+                // Initial population of the cards
+                filterBlogs();
+            })
+            .catch(error => console.log('Error:', error));
+    </script>
 </body>
+
 </html>
